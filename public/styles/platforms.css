@@ -1,0 +1,8 @@
+.partial-text {
+  height: 124px;
+  overflow: hidden;
+}
+.platforms-list {
+  display: flex;
+  justify-content: space-between;
+}

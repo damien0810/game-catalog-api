@@ -1,0 +1,7 @@
+.partial-text {
+  height: 90px;
+  overflow: hidden;
+}
+.games-list {
+  justify-content: space-between;
+}

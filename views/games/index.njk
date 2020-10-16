@@ -1,0 +1,27 @@
+{% extends "layout/index.njk" %}
+
+{% block title %}
+  <title>GD: Games</title>
+{% endblock %}
+<link rel="stylesheet" href="/assets/styles/games.css">
+{% block css %}
+{% endblock %}
+
+{% block content %}
+  <h1>Games</h1>
+<div class="games-list d-flex justify-content-around flex-wrap">
+    {% for game in games %}
+      <div class="card" style="width: 18rem;">
+        <img src="{{game.cover.thumbnail}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{game.name}} </h5>
+          <p class="card-text partial-text">{{game.summary}}</p>
+          <a href="/games/{{game.slug}}" class="btn btn-primary">Click Biloute</a>
+        </div>
+</div>
+  
+    
+      
+    {% endfor %}
+  </div>
+{% endblock %}
